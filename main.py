@@ -1,7 +1,8 @@
 import tkinter as tk
 import requests
 import time
-
+# A simple GUI that displays the metrics pertaining to the weather for any city in the world.
+# Times are all presented in ET
 
 def getWeather(canvas):
     city = textfield.get()
