@@ -19,7 +19,7 @@ def getWeather(canvas):
     sunset = time.strftime("%I:%M:%M", time.gmtime(json_data['sys']['sunset'] - 18000))
 
     final_info = condition + "\n" + str(temp) + "°C"
-    final_data = "\n" + "Highest temperature: " + str(max_temp) + "\n" + "Lowest temperature: " + str(min_temp) + "\n" + "Feels like: " + str(feels_like) + "\n" + "Humidity: " + str(humidity) + "\n" + "Wind: " + str(wind) + "\n" + "Sunrise: " + str(sunrise) + "\n" + "Sunset: " + str(sunset)
+    final_data = "\n" + "Highest temperature: " + str(max_temp) + "\n" + "Lowest temperature: " + str(min_temp) + "\n" + "Feels like: " + str(feels_like) + "\n" + "Humidity: " + str(humidity) + "\n" + "Wind: " + str(wind)
 
     label1.config(text=final_info)
     label2.config(text=final_data)
@@ -32,7 +32,7 @@ canvas.title("Weather App")
 f = ("arial", 10, "bold")
 t = ("arial", 25, "bold")
 
-citylabel = tk.Label(text="Please enter a city name:", font=f)
+citylabel = tk.Label(text="Please enter a city name:", font=("arial", 20, "bold"))
 citylabel.pack()
 textfield = tk.Entry(canvas, font=t)
 textfield.pack(pady=20)
